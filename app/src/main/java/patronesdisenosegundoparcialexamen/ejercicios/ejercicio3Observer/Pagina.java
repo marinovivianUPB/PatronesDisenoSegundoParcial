@@ -10,6 +10,7 @@ public class Pagina implements IPagina {
 
     @Override
     public void notificar(String post) {
+        System.out.println("------------------ACTUALIZACION DE LA PAGINA------------------------");
         if(post.equals("video")){
             video.stream().forEach(a -> a.notificacion("SE HA POSTEADO UN NUEVO VIDEO"));
             todo.stream().forEach(a -> a.notificacion("SE HA POSTEADO UN NUEVO VIDEO"));
