@@ -40,6 +40,9 @@ public class Estudiante {
         this.carrera = carrera;
     }
 
-  
+    public void show(){
+        System.out.println("---------------------");
+        System.out.println("Nombre: "+nombre);
+    }
     
 }

@@ -15,8 +15,8 @@ public class BaseDatos {
         return this;
     }
     
-    public void ordenar(List<Estudiante> estudiantes){
-        this.strategy.ordenar(estudiantes);
+    public void ordenar(){
+        this.strategy.ordenar(estudiantes).stream().forEach(a -> a.show());
     }
 
     public void setStrategy(IStrategy strategy) {
