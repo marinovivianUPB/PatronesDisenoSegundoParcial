@@ -8,7 +8,7 @@ public class Prendiendo implements IState {
     @Override
     public void handler(Computadora compu) {
         System.out.println("COMPU PRENDIENDO");
-        int rand = new Random().nextInt(4) +1;
+        int rand = new Random().nextInt(5) +1;
         int num = rand;
         for(String i: List.of("excel", "word", "visualStudio", "buscaminas")){
             if(rand>0){
